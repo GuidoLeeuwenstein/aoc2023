@@ -14,7 +14,7 @@ fn main() {
     match f {
         Ok(x) => {
             let mut totalScore = 0;
-            for (matchId, line) in x.lines().enumerate() {
+            for (_matchId, line) in x.lines().enumerate() {
                 let mut score = 0;
                 let (_, numbers) = line.split_once(":").unwrap();
 
